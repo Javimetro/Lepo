@@ -89,7 +89,7 @@ The gauge indicator not only enriches the user interface but also empowers users
 
 Disclaimer:
 
-      Lepo's sentiment analysis is optimized for the English language and is designed to understand the emotional tone of your entries. Please be aware that the tips provided by Lepo are pre-stored in our database and selected for you based on the sentiment score of your entries. While Lepo aims to offer relevant and supportive tips, they might not always perfectly resonate with every individual's unique circumstances or needs. We encourage users to apply their discretion when following these tips and seek professional advice where necessary.
+Lepo's sentiment analysis is optimized for the English language and is designed to understand the emotional tone of your entries. Please be aware that the tips provided by Lepo are pre-stored in our database and selected for you based on the sentiment score of your entries. While Lepo aims to offer relevant and supportive tips, they might not always perfectly resonate with every individual's unique circumstances or needs. We encourage users to apply their discretion when following these tips and seek professional advice where necessary.
 
 ## Understanding Sentiment Analysis in Lepo
 
