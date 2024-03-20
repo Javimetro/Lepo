@@ -153,7 +153,9 @@ For more detailed information about using Lepo and its API, visit the [Documenta
 The sources of information used in this project have been the educational material provided by my web development teachers Matti and Ulla.
 [Matti's GitHub repository](https://github.com/mattpe/hyte-web-dev/tree/main)
 [Ulla's GitHub repository](https://github.com/UllaSe/wsk-hyte-fe-material)
+
 A constant partner in the development of this project has been chatGPT4. With the right inputs and a curious mindset, chatGPT is an extremely useful tool especially for a computer engineering student.
+
 I have also briefly analyzed some [documents](http://corpustext.com/reference/sentiment_afinn.html) and [youtube videos](https://www.youtube.com/watch?v=uw3GbsY_Pbc) about Natural NLP and AFINN Sentiment Lexicon to understand how it works before implementing it in the code.
 
 ### Contact
@@ -161,7 +163,9 @@ If you want to report bugs or give me your feedback, feel free to contact me at 
 
 ## Future Development
 
-The development of this project has taken a lot of work, but it needs even more. The algorithms for returning advice to the user are still at a primitive stage and I would like to improve them by incorporating data regarding the user's sleep habits and energy levels, which at the moment are simply stored in the database. Although I really enjoy designing user interfaces as I consider myself a creative person with artistic taste, the back-end part has consumed 90% of the time spent on the project. So I would like to develop a more intuitive and beautiful user interface in the future. A lot of the code I learned to write while doing this project, so there are redundant parts in many functions and could be eliminated. Cleaning up the junk code files is something I would like to do.
+The development of this project has taken a lot of work, but it needs even more. The algorithms for returning advice to the user are still at a primitive stage and I would like to improve them by incorporating data regarding the user's sleep habits and energy levels, which at the moment are simply stored in the database. 
+
+Although I really enjoy designing user interfaces as I consider myself a creative person with artistic taste, the back-end part has consumed 90% of the time spent on the project. So I would like to develop a more intuitive and beautiful user interface in the future. A lot of the code I learned to write while doing this project, so there are redundant parts in many functions and could be eliminated. Cleaning up the junk code files is something I would like to do.
 
 
 ## Data Flow
