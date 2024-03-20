@@ -1,5 +1,5 @@
-import * as diaryService from '../services/diaryService.js';
-import { drawChart } from '../components/tipComponent.js';
+import * as diaryService from './diaryService.js';
+import { drawChart } from './tipComponent.js';
 
 
 //creates cards for displaying the data from user's old

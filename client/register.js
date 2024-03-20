@@ -1,3 +1,5 @@
+import './style.css';
+
 document.getElementById('register-form').addEventListener('submit', async function(event) {
   event.preventDefault();
 

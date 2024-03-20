@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="/styles/style.css"> <!-- Link to CSS file -->
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -17,9 +16,9 @@
     <label for="email">Email:</label><br>
     <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
     <span id="emailInfoBox" style="display: none;">University e-mail</span><br>
-    <input type="submit" value="Register">
+    <input id="register-button" type="submit" value="Register">
   </form>
 
-  <script src="/register.js"></script>
+  <script type="module" src="register.js"></script>
 </body>
 </html>
