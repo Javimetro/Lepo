@@ -144,11 +144,11 @@ req.session.save(err => {
 ```
 ### Live Application
 
-Lepo is available online at: [Lepo Web App](lepo.northeurope.cloudapp.azure.com)
+Lepo is available online during 21/3/2024 at: [lepo.northeurope.cloudapp.azure.com](https://lepo.northeurope.cloudapp.azure.com).
 
 ### Documentation and API Reference
 
-For more detailed information about using Lepo and its API, visit the [Documentation](https://lepo.northeurope.cloudapp.azure.com/docs/).
+For more detailed information about using Lepo and its API, visit the [Documentation](https://lepo.northeurope.cloudapp.azure.com/docs/) (during 21/3/2024).
 
 ## Sources and references
 
