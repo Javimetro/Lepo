@@ -10,8 +10,7 @@ export default defineConfig({
         login: path.resolve(__dirname, 'login.html'),// html
         menu: path.resolve(__dirname, 'menu.html'),
         modifyCredentials: path.resolve(__dirname, 'modifyCredentials.html'),
-        register: path.resolve(__dirname, 'register.html'),// Adding login.js explicitly
-        // Add other entry points if necessary
+        register: path.resolve(__dirname, 'register.html'),
       }
     }
   }

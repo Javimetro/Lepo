@@ -55,7 +55,7 @@ app.use(express.static('public'));
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 app.use('/sivusto', express.static(path.join(__dirname, '../public')));
-// Serve static files from the "docs" directory - http://localhost:3000/docs
+// Serve static files from the "docs" directory - https://lepo.northeurope.cloudapp.azure.com/docs
 app.use('/docs', express.static(path.join(__dirname, '../apidoc')));
 
 
@@ -72,7 +72,7 @@ app.use('/api/users', userRouter);
 app.use('/api/auth', authRouter);
 
 /*Route for testing "all errors" errorHandler function: (it worked)
-make get request to "http://localhost:3000/error" for testing it. It should give error 500.
+make get request to "https://lepo.northeurope.cloudapp.azure.com/error" for testing it. It should give error 500.
 app.get('/error', (req, res, next) => {
   const error = new Error('Test Error');
   error.status = 0;
