@@ -1,6 +1,8 @@
 // menu.js
-import { createDiaryCards, createEntryForm, renderFunction } from '/src/utils/renderContainer.js';
-import { validateSessionAndNavigate } from './services/diaryService'
+import './style.css';
+
+import { createDiaryCards, createEntryForm, renderFunction } from './renderContainer.js';
+import { validateSessionAndNavigate } from './diaryService.js'
 
 //check at the beginning to redirect the user to the login page if she is not logged in
 validateSessionAndNavigate();

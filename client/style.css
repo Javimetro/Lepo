@@ -45,6 +45,10 @@
   font-weight: bold;
 }
 
+#login-button{
+  margin-bottom: 20px;
+}
+
 #submitCredentialsButton{
   margin-bottom: 20px;
 }
@@ -177,3 +181,5 @@ h2 {
   height: 50px;
   font-weight: bold;
 }
+
+

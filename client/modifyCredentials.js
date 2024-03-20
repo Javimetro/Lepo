@@ -1,4 +1,5 @@
-import { validateSessionAndNavigate } from './services/diaryService';
+import './style.css';
+import { validateSessionAndNavigate } from './diaryService.js';
 
 //check at the beginning to redirect the user to the login page if she is not logged in
 validateSessionAndNavigate();
@@ -12,7 +13,7 @@ document.getElementById('modify-credentials-form').addEventListener('submit', as
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
 
-  const response = await fetch('https://lepo.northeurope.cloudapp.azure.com/api/users/:id', {
+  const response = await fetch('http://localhost:3000/api/users/:id', {
     method: 'PUT',
     headers: {
         'Content-Type': 'application/json',

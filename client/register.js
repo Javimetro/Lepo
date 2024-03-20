@@ -1,3 +1,5 @@
+import './style.css';
+
 document.getElementById('register-form').addEventListener('submit', async function(event) {
   event.preventDefault();
 
@@ -5,7 +7,7 @@ document.getElementById('register-form').addEventListener('submit', async functi
   const password = document.getElementById('password').value;
   const email = document.getElementById('email').value;
 
-  const response = await fetch('https://lepo.northeurope.cloudapp.azure.com/api/users/', {
+  const response = await fetch('http://localhost:3000/api/users/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

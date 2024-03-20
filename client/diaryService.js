@@ -1,7 +1,7 @@
 // Fetch all entries
 const getEntries = async function() {
   const token = localStorage.getItem('token');
-  const response = await fetch('https://lepo.northeurope.cloudapp.azure.com/api/entries', {
+  const response = await fetch('http://localhost:3000/api/entries', {
     headers: {
       'Authorization': 'Bearer ' + token
     }
@@ -15,7 +15,7 @@ const getEntries = async function() {
 // Fetch a single entry by id
 const getEntryById = async function(id) {
   const token = localStorage.getItem('token');
-  const response = await fetch(`https://lepo.northeurope.cloudapp.azure.com/api/entries/${id}`, {
+  const response = await fetch(`http://localhost:3000/api/entries/${id}`, {
     headers: {
       'Authorization': 'Bearer ' + token
     }
@@ -29,7 +29,7 @@ const getEntryById = async function(id) {
 // Fetch average hours slept by user id
 const getAvgHoursSleptByUserId = async function(id) {
   const token = localStorage.getItem('token');
-  const response = await fetch(`https://lepo.northeurope.cloudapp.azure.com/api/entries/stats/${id}`, {
+  const response = await fetch(`http://localhost:3000/api/entries/stats/${id}`, {
     headers: {
       'Authorization': 'Bearer ' + token
     }
@@ -43,7 +43,7 @@ const getAvgHoursSleptByUserId = async function(id) {
 // Create a new entry
 const postEntry = async function(entryData) {
   const token = localStorage.getItem('token');
-  const response = await fetch('https://lepo.northeurope.cloudapp.azure.com/api/entries', {
+  const response = await fetch('http://localhost:3000/api/entries', {
     method: 'POST',
     headers: {
       'Authorization': 'Bearer ' + token,
@@ -62,7 +62,7 @@ const postEntry = async function(entryData) {
 
 const getTip = async function() {
   const token = localStorage.getItem('token');
-  const response = await fetch('https://lepo.northeurope.cloudapp.azure.com/api/tips', {
+  const response = await fetch('http://localhost:3000/api/tips', {
     headers: {
       'Authorization': 'Bearer ' + token
     },
@@ -79,7 +79,7 @@ const getTip = async function() {
 // Delete an entry
 const deleteEntry = async function(id) {
   const token = localStorage.getItem('token');
-  const response = await fetch(`https://lepo.northeurope.cloudapp.azure.com/api/entries/${id}`, {
+  const response = await fetch(`http://localhost:3000/api/entries/${id}`, {
     method: 'DELETE',
     headers: {
       'Authorization': 'Bearer ' + token
@@ -94,7 +94,7 @@ const deleteEntry = async function(id) {
 // Update an entry
 const putEntry = async function(id, entryData) {
   const token = localStorage.getItem('token');
-  const response = await fetch(`https://lepo.northeurope.cloudapp.azure.com/api/entries/${id}`, {
+  const response = await fetch(`http://localhost:3000/api/entries/${id}`, {
     method: 'PUT',
     headers: {
       'Authorization': 'Bearer ' + token,
