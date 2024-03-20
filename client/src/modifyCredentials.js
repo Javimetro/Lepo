@@ -12,7 +12,7 @@ document.getElementById('modify-credentials-form').addEventListener('submit', as
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
 
-  const response = await fetch('http://localhost:3000/api/users/:id', {
+  const response = await fetch('https://lepo.northeurope.cloudapp.azure.com/api/users/:id', {
     method: 'PUT',
     headers: {
         'Content-Type': 'application/json',
