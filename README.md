@@ -2,7 +2,7 @@
 
 ## Description
 
-Lepo is a health calendar designed to assist students in managing their mental well-being. At its core, Lepo employs Natural Language Processing (NLP), a branch of artificial intelligence, to analyze daily journal entries. While the AI technology used is not as complex as some advanced models, it effectively discerns the sentiment of user inputs, providing a personalized experience.
+Lepo is a health calendar designed to assist students in managing their mental well-being. At its core, Lepo employs Natural Language Processing (NLP), a branch of artificial intelligence, to analyze daily journal entries. While the AI technology used is very modest and not as complex as some advanced models, it effectively discerns the sentiment of user inputs, providing a personalized experience.
 
 Lepo's sentiment analysis only works with english language.
 
