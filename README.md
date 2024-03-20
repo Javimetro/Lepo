@@ -86,8 +86,9 @@ Currently under development, Lepo aims to offer a safe and private space where s
 
 In addition to its core functionalities, Lepo uses an gauge indicator, powered by Google's chart package, to dynamically display the sentiment level of each journal entry. This feature is designed to offer users an immediate, visual understanding of their emotional state, with the gauge ranging from -5 to 5:
 
-    - Negative Sentiments: Represented on the gauge from 0 to -5, negative sentiments are visually depicted to help users recognize and reflect on moments of distress or challenge.
-    - Positive Sentiments: Spanning from 0 to 5, positive sentiments are clearly marked, celebrating moments of joy, accomplishment, and well-being.
+Negative Sentiments: Represented on the gauge from 0 to -5, negative sentiments are visually depicted to help users recognize and reflect on moments of distress or challenge.
+
+Positive Sentiments: Spanning from 0 to 5, positive sentiments are clearly marked, celebrating moments of joy, accomplishment, and well-being.
 
 The gauge indicator not only enriches the user interface but also empowers users to intuitively grasp the nuances of their emotional spectrum over time, fostering a deeper engagement with their personal mental health journey.
 
@@ -101,19 +102,20 @@ Lepo harnesses the power of the Natural library, coupled with the AFINN-111 lexi
 
 How It Works:
 
-    1. Tokenization: Each journal entry is broken down into individual words, or "tokens," using Natural's WordTokenizer. This step is crucial for analyzing the sentiment of each word independently.
+1. Tokenization: Each journal entry is broken down into individual words, or "tokens," using Natural's WordTokenizer. This step is crucial for analyzing the sentiment of each word independently.
 
 ```javascript
 const tokenizer = new natural.WordTokenizer();
 const tokens = tokenizer.tokenize(text);
 ```
-    2. Stemming: text normalization technique used in natural language processing and information retrieval. It reduces words to their base or root form, effectively treating different forms of the same word as equivalent. For example, stemming would reduce the words "running," "runner," and "ran" to the base word "run."
+2. Stemming: text normalization technique used in natural language processing and information retrieval. It reduces words to their base or root form, effectively treating different forms of the same word as equivalent. For example, stemming would reduce the words "running," "runner," and "ran" to the base word "run."
 ```javascript
 const analyzer = new natural.SentimentAnalyzer('English', natural.PorterStemmer, 'afinn');
 ```
-    3. Analysis lexicon: AFINN is a sentiment analysis lexicon, which lists words and their associated sentiment scores. Developed by Finn Årup Nielsen, it's specifically designed for analyzing sentiment in short texts, such as tweets or reviews. Each word in the AFINN lexicon is rated on a scale from -5 to +5, with negative numbers indicating negative sentiment and positive numbers indicating positive sentiment. For example, the word "happy" might have a score of +3, indicating a positive sentiment, whereas "sad" might have a score of -2, indicating a negative sentiment.
+3. Analysis lexicon: AFINN is a sentiment analysis lexicon, which lists words and their associated sentiment scores. Developed by Finn Årup Nielsen, it's specifically designed for analyzing sentiment in short texts, such as tweets or reviews. Each word in the AFINN lexicon is rated on a scale from -5 to +5, with negative numbers indicating negative sentiment and positive numbers indicating positive sentiment. For example, the word "happy" might have a score of +3, indicating a positive sentiment, whereas "sad" might have a score of -2, indicating a negative sentiment.
 
-    4. Score normalization: The algorithm accumulates only scores for sentiment-bearing words, ignoring neutral words (score of 0). The final sentiment score is normalized by averaging the total score over the number of sentiment-bearing words, ensuring a balanced measure regardless of entry length. The result is a rounded sentiment score, reflecting the overall emotional tone of the entry. Otherwise, a single word like "bastards" (-5 points) can have higher negative value than a long text with many negative words.
+4. Score normalization: The algorithm accumulates only scores for sentiment-bearing words, ignoring neutral words (score of 0). The final sentiment score is normalized by averaging the total score over the number of sentiment-bearing words, ensuring a balanced measure regardless of entry length. The result is a rounded sentiment score, reflecting the overall emotional tone of the entry. Otherwise, a single word like "bastards" (-5 points) can have higher negative value than a long text with many negative words.
+
 ```javascript
 tokens.forEach(token => {
     const score = analyzer.getSentiment([token]);
@@ -146,7 +148,7 @@ Lepo is available online at: [Lepo Web App](lepo.northeurope.cloudapp.azure.com)
 
 ### Documentation and API Reference
 
-For more detailed information about using Lepo and its API, visit the [Documentation](lepo.northeurope.cloudapp.azure.com/docs).
+For more detailed information about using Lepo and its API, visit the [Documentation](https://lepo.northeurope.cloudapp.azure.com/docs/).
 
 ## Sources and references
 
