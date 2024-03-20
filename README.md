@@ -1,4 +1,4 @@
-# Lepo, an AI-powered Health Diary
+# Lepo, the modest AI-powered Health Diary
 
 ## Description
 
