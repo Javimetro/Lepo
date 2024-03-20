@@ -7,8 +7,12 @@ Lepo is a health calendar designed to assist students in managing their mental w
 Lepo's sentiment analysis only works with english language.
 
 ## Screenshots
-
-
+![Index](documentation/screenshots/index.png)
+![Login](documentation/screenshots/login.png)
+![Form](documentation/screenshots/form.png)
+![Sentiment score](documentation/screenshots/tip.png)
+![Get entries](documentation/screenshots/entries.png)
+![Credential change](documentation/screenshots/credentials.png)
 
 
 ## Client Setup
