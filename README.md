@@ -165,7 +165,7 @@ If you want to report bugs or give me your feedback, feel free to contact me at 
 
 ## Future Development
 
-The development of this project has taken a lot of work, but it needs even more. The algorithms for returning advice to the user are still at a primitive stage and I would like to improve them by incorporating data regarding the user's sleep habits and energy levels, which at the moment are simply stored in the database. 
+The development of this project has taken a lot of work, but it needs even more. The algorithms for returning advice to the user are still at a primitive stage and I would like to improve them by incorporating data regarding the user's sleep habits and energy levels, which at the moment are simply stored in the database.
 
 Although I really enjoy designing user interfaces as I consider myself a creative person with artistic taste, the back-end part has consumed 90% of the time spent on the project. So I would like to develop a more intuitive and beautiful user interface in the future. A lot of the code I learned to write while doing this project, so there are redundant parts in many functions and could be eliminated. Cleaning up the junk code files is something I would like to do.
 

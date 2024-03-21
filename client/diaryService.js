@@ -13,9 +13,9 @@ const getEntries = async function() {
 };
 
 // Fetch a single entry by id
-const getEntryById = async function(id) {
+const getEntryById = async function(user_id) {
   const token = localStorage.getItem('token');
-  const response = await fetch(`https://lepo.northeurope.cloudapp.azure.com/api/entries/${id}`, {
+  const response = await fetch(`https://lepo.northeurope.cloudapp.azure.com/api/entries/${user_id}`, {
     headers: {
       'Authorization': 'Bearer ' + token
     }
@@ -27,9 +27,9 @@ const getEntryById = async function(id) {
 };
 
 // Fetch average hours slept by user id
-const getAvgHoursSleptByUserId = async function(id) {
+const getAvgHoursSleptByUserId = async function(user_id) {
   const token = localStorage.getItem('token');
-  const response = await fetch(`https://lepo.northeurope.cloudapp.azure.com/api/entries/stats/${id}`, {
+  const response = await fetch(`https://lepo.northeurope.cloudapp.azure.com/api/entries/stats/${user_id}`, {
     headers: {
       'Authorization': 'Bearer ' + token
     }
@@ -77,9 +77,9 @@ const getTip = async function() {
 };
 
 // Delete an entry
-const deleteEntry = async function(id) {
+const deleteEntry = async function(user_id) {
   const token = localStorage.getItem('token');
-  const response = await fetch(`https://lepo.northeurope.cloudapp.azure.com/api/entries/${id}`, {
+  const response = await fetch(`https://lepo.northeurope.cloudapp.azure.com/api/entries/${user_id}`, {
     method: 'DELETE',
     headers: {
       'Authorization': 'Bearer ' + token
@@ -92,9 +92,9 @@ const deleteEntry = async function(id) {
 };
 
 // Update an entry
-const putEntry = async function(id, entryData) {
+const putEntry = async function(user_id, entryData) {
   const token = localStorage.getItem('token');
-  const response = await fetch(`https://lepo.northeurope.cloudapp.azure.com/api/entries/${id}`, {
+  const response = await fetch(`https://lepo.northeurope.cloudapp.azure.com/api/entries/${user_id}`, {
     method: 'PUT',
     headers: {
       'Authorization': 'Bearer ' + token,
